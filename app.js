@@ -4,7 +4,7 @@ const port = 3001
 var cookieParser = require('cookie-parser')
 
 app.use(cookieParser())
-app.get('/', (req, res) => res.send('Hello World!'))
+app.get('/', (req, res) => res.send('Cookie Name Project!'))
 app.get('/login', function(req, res) {
     var name = "Jelani";
     res.cookie('some_name', name);
